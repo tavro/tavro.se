@@ -1,0 +1,59 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+img {
+	width: 128px;
+	border-radius: 8px;
+}
+
+h1,
+h2 {
+	width: fit-content;
+	background: linear-gradient(120deg, #20880c 0, #6fcf6f 37.5%, #20880c 100%);
+	background-clip: text;
+	color: transparent;
+}
+
+body {
+	background: #111;
+	color: white;
+}
+
+nav ul {
+	list-style: none;
+	display: flex;
+	gap: 8px;
+}
+
+nav a {
+	text-decoration: none;
+	display: block;
+	color: #555;
+}
+
+nav a.active {
+	color: #6fcf6f;
+	font-weight: bold;
+}
+
+small {
+	color: #555;
+}
+
+.hint {
+	font-size: 10px;
+	vertical-align: super;
+	text-decoration: none;
+}
+
+.horizontal-pair {
+	display: flex;
+	flex-direction: row;
+}
+
+.vertical-pair {
+	display: flex;
+	flex-direction: column;
+}
