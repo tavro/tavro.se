@@ -5,6 +5,7 @@
 
 img {
 	width: 128px;
+	height: 128px;
 	border-radius: 8px;
 }
 
@@ -17,8 +18,14 @@ h2 {
 }
 
 body {
+	max-width: 720px;
+	min-height: 100vh;
+	margin: 0 auto;
+	padding: 0 20px;
 	background: #111;
 	color: white;
+	display: grid;
+	grid-template-rows: auto 1fr auto;
 }
 
 nav ul {
@@ -42,6 +49,18 @@ small {
 	color: #555;
 }
 
+main {
+	padding: 96px 0;
+}
+
+footer {
+	padding-bottom: 20px;
+}
+
+header {
+	padding-top: 20px;
+}
+
 .hint {
 	font-size: 10px;
 	vertical-align: super;
@@ -51,9 +70,11 @@ small {
 .horizontal-pair {
 	display: flex;
 	flex-direction: row;
+	gap: 16px;
 }
 
 .vertical-pair {
 	display: flex;
 	flex-direction: column;
+	gap: 8px;
 }
