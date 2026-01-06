@@ -1,0 +1,130 @@
+#post-content {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 1.5rem;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont,
+               "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell,
+               "Helvetica Neue", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.7;
+}
+
+#post-content h1,
+#post-content h2,
+#post-content h3,
+#post-content h4,
+#post-content h5,
+#post-content h6 {
+  margin-top: 2.2rem;
+  margin-bottom: 1rem;
+  line-height: 1.25;
+  font-weight: 600;
+}
+
+#post-content h1 { font-size: 2.25rem; }
+#post-content h2 { font-size: 1.75rem; }
+#post-content h3 { font-size: 1.4rem; }
+#post-content h4 { font-size: 1.15rem; }
+#post-content h5 { font-size: 1rem; }
+#post-content h6 {
+  font-size: 0.9rem;
+}
+
+#post-content p {
+  margin: 1rem 0;
+}
+
+#post-content strong {
+  font-weight: 600;
+  color: #f9fafb;
+}
+
+#post-content em {
+  font-style: italic;
+}
+
+#post-content small {
+  color: #9ca3af;
+}
+
+#post-content a {
+  color: #60a5fa;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+#post-content a:hover {
+  color: #93c5fd;
+}
+
+#post-content ul,
+#post-content ol {
+  margin: 1rem 0 1rem 1.5rem;
+  padding: 0;
+}
+
+#post-content li {
+  margin: 0.4rem 0;
+}
+
+#post-content li > p {
+  margin: 0.4rem 0;
+}
+
+#post-content blockquote {
+  margin: 1.5rem 0;
+  padding: 0.75rem 1rem;
+  background-color: #161616;
+  border-left: 4px solid #374151;
+  color: #d1d5db;
+}
+
+#post-content blockquote p {
+  margin: 0;
+}
+
+#post-content code {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco,
+               Consolas, "Liberation Mono", monospace;
+  font-size: 0.95em;
+  background-color: #1a1a1a;
+  color: #e5e7eb;
+  padding: 0.2em 0.4em;
+  border-radius: 4px;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+#post-content pre {
+  margin: 1.5rem 0;
+  padding: 1rem;
+  overflow-x: auto;
+
+  background-color: #141414;
+  color: #e5e7eb;
+
+  border-radius: 8px;
+  border: 1px solid #262626;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.03);
+}
+
+#post-content pre code {
+  background: none;
+  border: none;
+  padding: 0;
+  font-size: 0.9rem;
+  color: inherit;
+}
+
+#post-content hr {
+  margin: 2.5rem 0;
+  border: none;
+  border-top: 1px solid #262626;
+}
+
+#post-content img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: 1.5rem auto;
+  border-radius: 6px;
+}

@@ -6,8 +6,10 @@
 		<meta name="viewport" content="width=device-width,initial-scale=1">
 		<link rel="icon" type="image/x-icon" href="res/icon.png">
 		<link rel="stylesheet" href="common/styling/styles.css">
+		<link rel="stylesheet" href="styling/blog.css">
 		<script src="common/scripts/main.js"></script>
-		<script></script>
+		<script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+		<script src="scripts/blog.js"></script>
 	</head>
 	
 	<body>
@@ -27,7 +29,12 @@
 		</header>
 
 		<main>
-                        <p>this page is currently under construction, come back later, or visit <a href="https://isakhorvath.me">isakhorvath.me</a></p>
+                        <div class="vertical-pair">
+				<h2>blog posts</h2>
+				<br>
+				<div id="blog-posts"></div>
+				<div id="post-content"></div>
+			</div>
                 </main>
 
 		<footer>
