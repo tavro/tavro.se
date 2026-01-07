@@ -61,6 +61,27 @@ header {
 	padding-top: 20px;
 }
 
+.cursor {
+	display: inline-block;
+	width: 12px;
+	height: 20px;
+	background: white;
+	border-radius: 1px;
+	animation: cursor 1s infinite;
+}
+
+@keyframes cursor {
+	0% {
+		opacity: 0;
+	}
+	50% {
+		opacity: 1;
+	}
+	100% {
+		opacity: 0;
+	}
+}
+
 .hint {
 	font-size: 10px;
 	vertical-align: super;
