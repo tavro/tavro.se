@@ -82,6 +82,10 @@ header {
 	}
 }
 
+.gray {
+	color: #555;
+}
+
 .hint {
 	font-size: 10px;
 	vertical-align: super;
@@ -98,4 +102,16 @@ header {
 	display: flex;
 	flex-direction: column;
 	gap: 8px;
+}
+
+.vertical-pair-md {
+	display: flex;
+	flex-direction: column;
+	gap: 16px;
+}
+
+.vertical-pair-lg {
+	display: flex;
+	flex-direction: column;
+	gap: 24px;
 }
