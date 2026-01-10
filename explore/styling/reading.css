@@ -1,0 +1,26 @@
+.reading ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.reading li {
+  margin: 0;
+  padding: 0;
+}
+
+.reading li {
+  font-family: Verdana, Geneva, sans-serif;
+  color: black;
+  border: 2px dotted #555;
+  padding: 6px;
+  margin-bottom: 4px;
+}
+
+.reading li a {
+  color: #6fcf6f;
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+
