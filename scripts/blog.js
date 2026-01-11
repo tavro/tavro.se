@@ -1,5 +1,5 @@
 async function listBlogPosts() {
-      const url = "https://api.github.com/repos/tavro/blog-posts/contents/";
+      const url = "https://api.github.com/repos/tavro/tavro.se/contents/blog/posts";
 
       try {
         const response = await fetch(url);
