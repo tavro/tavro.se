@@ -1,0 +1,129 @@
+body {
+    background: #242424;
+    color: rgb(232, 230, 227);
+    font-family: Consolas,serif;
+}
+
+main {
+    width: 75%;
+    margin: auto;
+    margin-top: 64px;
+}
+
+h1, p {
+    padding: 8px;
+    margin: 0px;
+}
+
+.gray {
+    font-style: italic;
+    color: #888;
+}
+
+a {
+    color: #579e40;
+}
+
+.progress-container {
+    width: 100%;
+    background-color: #e0e0df;
+    margin-top: 16px;
+    margin-bottom: 16px;
+    border-radius: 25px;
+    overflow: hidden;
+}
+
+.progress-bar {
+    height: 30px;
+    width: 79.95%; /* (7995 / 10000) * 100 */
+    background-color: #579e40;
+    text-align: center;
+    line-height: 30px;
+    color: white;
+    border-radius: 25px 0 0 25px;
+}
+
+.container {
+    display: flex;
+    gap: 8px;
+}
+
+.carousel-container {
+    display: flex;
+    text-align: left;
+    position: relative;
+}
+
+.carousel {
+    position: relative;
+    width: 100%;
+    max-width: 400px;
+    margin: 0;
+}
+
+.carousel-image {
+    display: none;
+    width: 100%;
+    height: auto;
+}
+
+.carousel-image.active {
+    display: block;
+}
+
+button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.prev-btn {
+    left: 10px;
+}
+
+.next-btn {
+    right: 10px;
+}
+
+.text-content p {
+    margin: 0;
+}
+
+.image {
+    height: 172px;
+}
+
+.poem {
+    font-family: 'Georgia', serif;
+    padding: 0;
+    margin: 0;
+    font-style: italic;
+    color: #888;
+}
+
+.stanza {
+    margin-bottom: 1.5rem;
+    line-height: 1.6;
+}
+
+@media only screen and (max-width: 512px) {
+    main {
+        width: 95%;
+        margin: auto;
+        margin-top: 64px;
+    }
+
+    .container {
+        display: block;
+        gap: 8px;
+    }
+}
