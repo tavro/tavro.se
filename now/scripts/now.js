@@ -40,25 +40,23 @@ function constructArchiveList() {
 
 	const MANIFEST_URL = "https://raw.githubusercontent.com/tavro/tavro.se/main/now/archive/manifest.json";
 	fetch(MANIFEST_URL)
-		.then(res => {
-			if (!res.ok) throw new Error("Network response was not ok");
-			return res.json();
-		})
-		.then(entries => {
-			entries.forEach(entry => {
-				const li = document.createElement("li");
- 				const a = document.createElement("a");
+    		.then(res => res.text())
+    		.then(text => JSON.parse(text))
+    		.then(entries => {
+      			entries.forEach(entry => {
+        			const li = document.createElement("li");
+        			const a = document.createElement("a");
 
-				a.href = `archive/${entry.year}/${entry.month}/index.html`;
-				a.textContent = entry.date;
+       				a.href = `archive/${entry.year}/${entry.month}/index.html`;
+        			a.textContent = entry.date;
 
-				li.appendChild(a);
-				list.appendChild(li);
-			});
-		})
-		.catch(err => {
-			console.error("Failed to load archive manifest:", err);
-		});
+        			li.appendChild(a);
+        			list.appendChild(li);
+      			});
+    		})
+    		.catch(err => {
+      			console.error("Failed to load archive manifest:", err);
+    		});
 }
 
 document.addEventListener("DOMContentLoaded", () => {
