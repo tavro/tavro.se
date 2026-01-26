@@ -1,0 +1,270 @@
+const entries = [
+  {
+	date: "2026-01-24",
+	category: "ai",
+	title: "AI is a horse",
+	body: "<blockquote cite=\"https://kconner.com/2024/08/02/ai-is-a-horse.html\"><ul><li>It is faster than your feet depending on the terrain</li><li>It is way slower and less reliable than a train but can go more places</li><li>It eats a lot</li><li>You cannot simply tell it to go to the store for you</li><li>You have to tell it where to turn even if it might guess right sometimes</li><li>You have to keep it on the road even if it usually stays on the road</li><li>You can only lead it to water, you cannot make it drink</li><li>A good one runs at the shadow of the whip</li><li>We are skeptical of those that talk</li></ul></blockquote>",
+	sources: {
+		"kconner.com": "https://kconner.com/2024/08/02/ai-is-a-horse.html"
+	},
+	comment: "ai is a horse."
+  },
+  {
+	date: "2026-01-14",
+	category: "ai",
+	title: "about anti-AI hype",
+	body: "<blockquote cite=\"https://antirez.com/news/158\">I love writing software, line by line. It could be said that my career was a continuous effort to create software well written, minimal, where the human touch was the fundamental feature. I also hope for a society where the last are not forgotten. Moreover, I don't want AI to economically succeed. But, I would not respect myself and my intelligence if my idea of software and society would impair my vision: facts are facts, and AI is going to change programming forever.</blockquote>",
+	sources: {
+		"Salvatore Sanfilippo": "https://antirez.com/news/158"
+	},
+	comment: "i have slightly edited the quote to omit the author's extreme political and economic opinions, in general i agree with this post a lot."
+  },
+  {
+	date: "2026-01-14",
+	category: "ai",
+	title: "did AI kill Tailwind's business?",
+	body: "<blockquote cite=\"https://github.com/tailwindlabs/tailwindcss.com/pull/2388#issuecomment-3717222957\">[1] The reality is that 75% of the people on our engineering team lost their jobs here yesterday because of the brutal impact AI has had on our business. Traffic to our docs is down about 40% from early 2023 despite Tailwind being more popular than ever. <blockquote cite=\"https://dri.es/ai-is-a-business-model-stress-test\">[2] AI didn't kill Tailwind's business. It stress tested it. Their business model failed the test, but that is not an indictment of all Open Source business models. Tailwind's business model worked for years. It relied on developers visiting their documentation, discovering Tailwind Plus while browsing, and buying it. Tailwind Plus is a $299 collection of pre-built UI components. Traffic led to discovery, and discovery drove sales. It was a reasonable business model, but always fragile. In the last year, more and more developers started asking AI for code instead of reading documentation, and their sales and marketing funnel broke.</blockquote></blockquote>",
+	sources: {
+		"Adam Wathan": "https://github.com/tailwindlabs/tailwindcss.com/pull/2388#issuecomment-3717222957",
+		"Dries Buytaert": "https://dri.es/ai-is-a-business-model-stress-test"
+	},
+	comment: "i think Dries makes a good point here. the truth is probably somewhere in between. but what do i know? i am not running a company. still, i definitely think companies will have to adapt their business models to account for the integration of AI into society. on a positive note, <a href=\"https://x.com/OfficialLoganK/status/2009339263251566902\">Google are now sponsoring Tailwind</a>."
+  },
+  {
+	date: "2026-01-22",
+	category: "career",
+	title: "addicted to being useful",
+	body: "<blockquote cite=\"https://www.seangoedecke.com/addicted-to-being-useful/\">When I get together with my friends in the industry, I feel a little guilty about how much I love my job. This is a tough time to be a software engineer. The job was less stressful in the late 2010s than it is now, and I sympathize with anyone who is upset about the change. There are a lot of objective reasons to feel bad about work. But despite all that, I’m still having a blast. I enjoy pulling together projects, figuring out difficult bugs, and writing code in general. I like spending time with computers. But what I really love is being useful.</blockquote>",
+	sources: {
+		"sean goedecke": "https://www.seangoedecke.com/addicted-to-being-useful/"
+	},
+	comment: "relatable! :-)"
+  },
+  {
+	date: "2026-01-21",
+	category: "career",
+	title: "recent hires do not have degrees",
+	body: "<blockquote cite=\"https://www.yahoo.com/news/articles/google-cofounder-reveals-tons-recent-231500103.html\">Data from the Burning Glass Institute shows that in 2017, degree requirements were part of 93% of job postings at Google. By 2022, that figure had dropped to 77%. Other large tech companies have also begun judging candidates by their abilities instead of their diplomas. Microsoft, Apple, and Cisco are among those dropping degree mandates. This shift raises questions about what a college education is worth, especially as artificial intelligence tools got better at performing tasks that once required formal training. If you spent years and tens of thousands of dollars earning a degree, companies' hiring people without that credential might feel frustrating. The change could leave graduates wondering if their time and money were well-spent.</blockquote>",
+	sources: {
+		"yahoo!news": "https://www.yahoo.com/news/articles/google-cofounder-reveals-tons-recent-231500103.html"
+	},
+	comment: "this is quite sad. i still remember deciding what i wanted to study at university when i was just 13 years old. like many others, a major motivation for getting a master's degree in computer science was being hired by one of the FAANG companies. fortunately, i got my degree in Sweden and didn't have to financially ruin myself in the process. i do understand the frustration of those who put their entire lives on the line in the hope that a degree would secure them a job at a fortune company. my perspective has changed over time. i'm grateful for my education, and i'm genuinely happy for those who do manage to work at these companies, especially when they may not have had the opportunity or circumstances to attend university at all."
+  },
+  {
+	date: "2026-01-16",
+	category: "career",
+	title: "nothing is sacred in programming",
+	body: "<blockquote cite=\"https://agentultra.com/blog/how-i-learned-everything-i-know/index.html\">I have never met a group of people so passionate about sharing what they know with anyone than programmers. This is not an industry that jealously guards its knowledge and keeps secrets. We give away source code, books, blog posts, presentations, video tutorials, etc for free. We get excited about teaching people. And I got to where I am thanks to people like me who wrote down and shared their knowledge openly and freely. I’ve benefited from open source. From books people have published online for free and courses they’ve given away. I’ve learned a great deal from people I chat with online, over forums, and at meetups where people give presentations to share their knowledge and work. There is nothing sacred in programming. If you want to learn how operating systems work there are free books, full source code, forums, chat rooms, email lists, meetups, blog posts, video seminars, tutorials and everything you possibly need available to you. Interested in compilers? Databases? Distributed systems? Put your hand up and there will be someone eager to help you and teach you everything they know.</blockquote>",
+	sources: {
+		"Agentultra": "https://agentultra.com/blog/how-i-learned-everything-i-know/index.html"
+	},
+	comment: "preach!"
+  },
+  {
+	date: "2026-01-23",
+	category: "tech",
+	title: "IP over avian carriers with quality of service",
+	body: "<p><a href=\"https://www.rfc-editor.org/rfc/rfc2549.html\">link</a>, and related <a href=\"https://en.wikipedia.org/wiki/IP_over_Avian_Carriers\">wiki</a> article you have probably seen before.</p>",
+	sources: {
+		"rfc-editor.org": "https://www.rfc-editor.org/rfc/rfc2549.html",
+		"wikipedia": "https://en.wikipedia.org/wiki/IP_over_Avian_Carriers"
+	},
+	comment: "i love the internet"
+  },
+  {
+	date: "2026-01-18",
+	category: "random",
+	title: "why airplanes still have ashtrays",
+	body: "<div class=\"horizontal-pair\"><img src=\"res/notes/ashtray.jpg\" /><p>i recently traveled to the U.S. and noticed an ashtray in the airplane bathroom, which seemed odd since smoking is clearly prohibited on flights. apparently, they are required for safety reasons. if someone does illegally smoke, an ashtray prevents a lit cigarette from ending up in the trash and starting a fire. <a href=\"https://www.faa.gov/media/33511\">[1]</a> newly built aircraft still include these ashtrays as part of their lavatory design to meet FAA and international standards. <a href=\"https://iatanews.com/why-newly-built-aircraft-still-have-ashtrays-in-the-toilet/\">[2]</a></p></div>",
+	sources: {
+		"faa.gov": "https://www.faa.gov/media/33511",
+		"iatanews": "https://iatanews.com/why-newly-built-aircraft-still-have-ashtrays-in-the-toilet/"
+	},
+	comment: ""
+  }
+];
+
+document.addEventListener("DOMContentLoaded", () => {
+  const canvas = document.getElementById("note-canvas");
+  const ctx = canvas.getContext("2d");
+  const preview = document.getElementById("note-preview");
+
+  const CIRCLE_RADIUS = 12;
+  const CLUSTER_RADIUS = 45;
+  const CATEGORY_SPACING = 120;
+  const MAX_PLACEMENT_ATTEMPTS = 100;
+
+  const palette = ["#ff6b6b", "#4dabf7", "#51cf66", "#ffd43b", "#9775fa"];
+  const categoryColors = {};
+  let colorIndex = 0;
+
+  entries.forEach(e => {
+    if (!categoryColors[e.category]) {
+      categoryColors[e.category] = palette[colorIndex++ % palette.length];
+    }
+  });
+
+  const categories = [...new Set(entries.map(e => e.category))];
+  let circles = [];
+  let clusterCenters = {};
+  let activeCircle = null;
+
+  function resizeCanvas() {
+    const rect = canvas.getBoundingClientRect();
+    const dpr = window.devicePixelRatio || 1;
+    canvas.width = rect.width * dpr;
+    canvas.height = rect.height * dpr;
+    ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+  }
+
+  function clamp(v, min, max) {
+    return Math.max(min, Math.min(max, v));
+  }
+
+  function computeClusterCenters() {
+    const w = canvas.width / devicePixelRatio;
+    const h = canvas.height / devicePixelRatio;
+
+    clusterCenters = {};
+    categories.forEach((cat, i) => {
+      const angle = (i / categories.length) * Math.PI * 2;
+      const margin = CLUSTER_RADIUS + CIRCLE_RADIUS;
+
+      let x = w / 2 + Math.cos(angle) * CATEGORY_SPACING;
+      let y = h / 2 + Math.sin(angle) * CATEGORY_SPACING;
+
+      x = clamp(x, margin, w - margin);
+      y = clamp(y, margin, h - margin);
+
+      clusterCenters[cat] = { x, y };
+    });
+  }
+
+  function circlesOverlap(a, b) {
+    return Math.hypot(a.x - b.x, a.y - b.y) < a.radius + b.radius;
+  }
+
+  function isPointInCircle(px, py, c) {
+    return Math.hypot(px - c.x, py - c.y) <= c.radius;
+  }
+
+  function placeCircles() {
+    circles = [];
+    const w = canvas.width / devicePixelRatio;
+    const h = canvas.height / devicePixelRatio;
+
+    entries.forEach(entry => {
+      const center = clusterCenters[entry.category];
+      let placed = false;
+
+      for (let i = 0; i < MAX_PLACEMENT_ATTEMPTS && !placed; i++) {
+        const angle = Math.random() * Math.PI * 2;
+        const dist = Math.random() * CLUSTER_RADIUS;
+
+        let x = center.x + Math.cos(angle) * dist;
+        let y = center.y + Math.sin(angle) * dist;
+
+        x = clamp(x, CIRCLE_RADIUS, w - CIRCLE_RADIUS);
+        y = clamp(y, CIRCLE_RADIUS, h - CIRCLE_RADIUS);
+
+        const candidate = { x, y, radius: CIRCLE_RADIUS };
+
+        if (!circles.some(c => circlesOverlap(candidate, c))) {
+          circles.push({
+            ...candidate,
+            entry,
+            color: categoryColors[entry.category],
+            hovered: false
+          });
+          placed = true;
+        }
+      }
+    });
+  }
+
+  function renderSources(sources = {}) {
+    const entries = Object.entries(sources);
+    if (entries.length === 0) return "";
+
+    const label = entries.length === 1 ? "source" : "sources";
+
+    const links = entries
+      .map(([name, url], i) =>
+        `<a href="${url}" target="_blank" rel="noopener">[${i + 1}] ${name}</a>`
+      )
+      .join(", ");
+
+    return `<small>${label}: ${links}</small>`;
+  }
+
+  function renderEntry(entry) {
+    preview.innerHTML = `
+      <article class="note">
+        <h3>${entry.title}</h3>
+        ${entry.body}
+        ${renderSources(entry.sources)}
+        ${entry.comment ? `<p class="comment"><b>@tavro:</b> ${entry.comment}</p>` : ""}
+      </article>
+    `;
+  }
+
+  function draw() {
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+    circles.forEach(c => {
+      ctx.beginPath();
+      ctx.arc(c.x, c.y, c.radius, 0, Math.PI * 2);
+      ctx.fillStyle = c.color;
+      ctx.fill();
+
+      if (c.hovered || c === activeCircle) {
+        ctx.lineWidth = 3;
+        ctx.strokeStyle = "#000";
+        ctx.stroke();
+      }
+    });
+  }
+
+  canvas.addEventListener("mousemove", e => {
+    const rect = canvas.getBoundingClientRect();
+    const mx = e.clientX - rect.left;
+    const my = e.clientY - rect.top;
+
+    let redraw = false;
+    let hovering = false;
+
+    circles.forEach(c => {
+      const prev = c.hovered;
+      c.hovered = isPointInCircle(mx, my, c);
+      if (c.hovered) hovering = true;
+      if (prev !== c.hovered) redraw = true;
+    });
+
+    canvas.style.cursor = hovering ? "pointer" : "default";
+    if (redraw) draw();
+  });
+
+  canvas.addEventListener("click", e => {
+    const rect = canvas.getBoundingClientRect();
+    const mx = e.clientX - rect.left;
+    const my = e.clientY - rect.top;
+
+    circles.forEach(c => {
+      if (isPointInCircle(mx, my, c)) {
+        activeCircle = c;
+        renderEntry(c.entry);
+        draw();
+      }
+    });
+  });
+
+  function init() {
+    resizeCanvas();
+    computeClusterCenters();
+    placeCircles();
+    draw();
+  }
+
+  window.addEventListener("resize", init);
+  init();
+});
