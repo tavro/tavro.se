@@ -1,5 +1,15 @@
 const entries = [
   {
+	date: "2026-01-30",
+	category: "career",
+	title: "GOTO 10 is closing",
+	body: "<blockquote cite=\"https://www.goto10.se/goto-10-stanger/\">On Friday, 27 February 2026, Goto 10 in Linköping and Malmö will close their doors for the final time. Event bookings are already closed and will not reopen. You can book both the podcast studio and meeting rooms as usual, and the events already scheduled in February will still be open to attend. When the Internet Foundation opened Goto 10 Stockholm in 2017, the goal was to lower barriers and promote innovation and entrepreneurship. Since then, the landscape around these issues has changed. At the end of 2025, a new strategic direction was adopted for the Internet Foundation, and it is against this background that Goto 10 is now being phased out. As we close, we would like to thank you for nine fantastic years of events, knowledge sharing, and meetings. We started Goto 10 with the ambition of building strong communities, and as we now close this chapter, we hope you share the feeling that we succeeded.</blockquote>",
+	sources: {
+		"goto 10": "https://www.goto10.se/goto-10-stanger/"
+        },
+	comment: "this is so sad. <\\3 i first became a member of goto 10 in september 2022, over three years ago, when i founded the <a href=\"https://webbu.se/hackathon\">webbu hackathon</a>. they let us use their spaces for free to host our hackathon event. they provided free internet, electricity, and an awesome space to be in. after the event, we kept in contact and continued hosting our events there for at least one more year. then i founded LiTHe Hax, and we hosted regular events there almost once a month every month of the year since then. it was not just a great place to hang out and study, but also to meet new people and get inspired. once again, i talk for me and many of my friends when i say this: we are so sad to see goto 10 go. i have been in contact with the project manager and other people related to the project, and they will try to find other spaces to recreate this collaboratory spirit. i wish everyone involved good luck, and i hope that me and my organizations will still be a part of the community in one way or another... :'-)<3 thanks for everything, for all the friend i've found, for helping me with my career and all the projects that became true because of you, also thanks to <a href=\"https://linkopingsciencepark.se\">LSP</a> and <a href=\"https://internetstiftelsen.se\">internetstiftelsen</a>. you guys are the best!"
+  },
+  {
 	date: "2026-01-24",
 	category: "ai",
 	title: "AI is a horse",
