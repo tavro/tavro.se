@@ -89,7 +89,8 @@ document.addEventListener("DOMContentLoaded", () => {
   const ctx = canvas.getContext("2d");
   const preview = document.getElementById("note-preview");
 
-  const CIRCLE_RADIUS = 12;
+  const NOTE_SIZE = 28;
+  const NOTE_HIT_RADIUS = 14;
   const CLUSTER_RADIUS = 45;
   const CATEGORY_SPACING = 120;
   const MAX_PLACEMENT_ATTEMPTS = 100;
@@ -108,6 +109,43 @@ document.addEventListener("DOMContentLoaded", () => {
   let circles = [];
   let clusterCenters = {};
   let activeCircle = null;
+
+  const noteImage = new Image();
+  let noteImageReady = false;
+  const tintedCache = new Map();
+
+  noteImage.onload = () => {
+    noteImageReady = true;
+    init();
+  };
+
+  noteImage.onerror = () => {
+    console.warn("note.png failed to load");
+    init();
+  };
+
+  noteImage.src = "res/notes/note.png";
+
+  function getTintedNote(color) {
+    if (!noteImageReady) return null;
+
+    if (tintedCache.has(color)) return tintedCache.get(color);
+
+    const off = document.createElement("canvas");
+    off.width = NOTE_SIZE;
+    off.height = NOTE_SIZE;
+    const octx = off.getContext("2d");
+
+    octx.drawImage(noteImage, 0, 0, NOTE_SIZE, NOTE_SIZE);
+
+    octx.globalCompositeOperation = "source-atop";
+    octx.fillStyle = color;
+    octx.fillRect(0, 0, NOTE_SIZE, NOTE_SIZE);
+    octx.globalCompositeOperation = "source-over";
+
+    tintedCache.set(color, off);
+    return off;
+  }
 
   function resizeCanvas() {
     const rect = canvas.getBoundingClientRect();
@@ -128,13 +166,11 @@ document.addEventListener("DOMContentLoaded", () => {
     clusterCenters = {};
     categories.forEach((cat, i) => {
       const angle = (i / categories.length) * Math.PI * 2;
-      const margin = CLUSTER_RADIUS + CIRCLE_RADIUS;
-
       let x = w / 2 + Math.cos(angle) * CATEGORY_SPACING;
       let y = h / 2 + Math.sin(angle) * CATEGORY_SPACING;
 
-      x = clamp(x, margin, w - margin);
-      y = clamp(y, margin, h - margin);
+      x = clamp(x, NOTE_SIZE, w - NOTE_SIZE);
+      y = clamp(y, NOTE_SIZE, h - NOTE_SIZE);
 
       clusterCenters[cat] = { x, y };
     });
@@ -155,19 +191,15 @@ document.addEventListener("DOMContentLoaded", () => {
 
     entries.forEach(entry => {
       const center = clusterCenters[entry.category];
-      let placed = false;
 
-      for (let i = 0; i < MAX_PLACEMENT_ATTEMPTS && !placed; i++) {
+      for (let i = 0; i < MAX_PLACEMENT_ATTEMPTS; i++) {
         const angle = Math.random() * Math.PI * 2;
         const dist = Math.random() * CLUSTER_RADIUS;
 
-        let x = center.x + Math.cos(angle) * dist;
-        let y = center.y + Math.sin(angle) * dist;
+        const x = clamp(center.x + Math.cos(angle) * dist, NOTE_SIZE, w - NOTE_SIZE);
+        const y = clamp(center.y + Math.sin(angle) * dist, NOTE_SIZE, h - NOTE_SIZE);
 
-        x = clamp(x, CIRCLE_RADIUS, w - CIRCLE_RADIUS);
-        y = clamp(y, CIRCLE_RADIUS, h - CIRCLE_RADIUS);
-
-        const candidate = { x, y, radius: CIRCLE_RADIUS };
+        const candidate = { x, y, radius: NOTE_HIT_RADIUS };
 
         if (!circles.some(c => circlesOverlap(candidate, c))) {
           circles.push({
@@ -176,19 +208,19 @@ document.addEventListener("DOMContentLoaded", () => {
             color: categoryColors[entry.category],
             hovered: false
           });
-          placed = true;
+          break;
         }
       }
     });
   }
 
   function renderSources(sources = {}) {
-    const entries = Object.entries(sources);
-    if (entries.length === 0) return "";
+    const items = Object.entries(sources);
+    if (!items.length) return "";
 
-    const label = entries.length === 1 ? "source" : "sources";
+    const label = items.length === 1 ? "source" : "sources";
 
-    const links = entries
+    const links = items
       .map(([name, url], i) =>
         `<a href="${url}" target="_blank" rel="noopener">[${i + 1}] ${name}</a>`
       )
@@ -208,21 +240,45 @@ document.addEventListener("DOMContentLoaded", () => {
     `;
   }
 
+  function drawTitlePreview(circle) {
+    const text = circle.entry.title;
+    ctx.font = "13px system-ui, sans-serif";
+
+    const padding = 6;
+    const w = ctx.measureText(text).width + padding * 2;
+    const h = 22;
+
+    const x = circle.x + 16;
+    const y = circle.y - h - 8;
+
+    ctx.fillStyle = "rgba(0,0,0,0.8)";
+    ctx.fillRect(x, y, w, h);
+
+    ctx.fillStyle = "#fff";
+    ctx.textBaseline = "middle";
+    ctx.fillText(text, x + padding, y + h / 2);
+  }
+
   function draw() {
     ctx.clearRect(0, 0, canvas.width, canvas.height);
 
     circles.forEach(c => {
-      ctx.beginPath();
-      ctx.arc(c.x, c.y, c.radius, 0, Math.PI * 2);
-      ctx.fillStyle = c.color;
-      ctx.fill();
+      const color = c.hovered ? "#ffffff" : c.color;
+      const img = getTintedNote(color);
 
-      if (c.hovered || c === activeCircle) {
-        ctx.lineWidth = 3;
-        ctx.strokeStyle = "#000";
-        ctx.stroke();
+      if (img) {
+        ctx.drawImage(
+          img,
+          c.x - NOTE_SIZE / 2,
+          c.y - NOTE_SIZE / 2,
+          NOTE_SIZE,
+          NOTE_SIZE
+        );
       }
     });
+
+    const hovered = circles.find(c => c.hovered);
+    if (hovered) drawTitlePreview(hovered);
   }
 
   canvas.addEventListener("mousemove", e => {
@@ -230,8 +286,8 @@ document.addEventListener("DOMContentLoaded", () => {
     const mx = e.clientX - rect.left;
     const my = e.clientY - rect.top;
 
-    let redraw = false;
     let hovering = false;
+    let redraw = false;
 
     circles.forEach(c => {
       const prev = c.hovered;
@@ -266,5 +322,5 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   window.addEventListener("resize", init);
-  init();
 });
+
