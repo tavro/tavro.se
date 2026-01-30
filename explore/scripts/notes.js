@@ -1,6 +1,12 @@
 const entries = [
   {
 	date: "2026-01-30",
+	category: "poetry",
+	title: "perfection",
+	body: "<p>perfection is like a freshly washed window<br>but not the window itself<br>it's the light falling through<br>it's a cup of coffee that never cools<br>a pen that writes without hesitation<br>as if it knows exactly what it wants to say<br>and always knew it<br><br>perfection is not a straight line<br>it is the bend where the road bends<br>where the world for a moment feels unexpectedly soft<br>perfection is to be there<br>right there<br>with everything that cannot be put into words<br><br>perfection is when she ties her shoes<br>not to go anywhere in particular<br>not to show off to the world<br>the world just happens to be there<br>ready to be dyed in her beauty</p>"
+  },
+  {
+	date: "2026-01-29",
 	category: "career",
 	title: "GOTO 10 is closing",
 	body: "<blockquote cite=\"https://www.goto10.se/goto-10-stanger/\">On Friday, 27 February 2026, Goto 10 in Linköping and Malmö will close their doors for the final time. Event bookings are already closed and will not reopen. You can book both the podcast studio and meeting rooms as usual, and the events already scheduled in February will still be open to attend. When the Internet Foundation opened Goto 10 Stockholm in 2017, the goal was to lower barriers and promote innovation and entrepreneurship. Since then, the landscape around these issues has changed. At the end of 2025, a new strategic direction was adopted for the Internet Foundation, and it is against this background that Goto 10 is now being phased out. As we close, we would like to thank you for nine fantastic years of events, knowledge sharing, and meetings. We started Goto 10 with the ambition of building strong communities, and as we now close this chapter, we hope you share the feeling that we succeeded.</blockquote>",
