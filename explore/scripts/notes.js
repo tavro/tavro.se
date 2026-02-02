@@ -1,5 +1,35 @@
 const entries = [
   {
+	date: "2026-02-02",
+	category: "random",
+	title: "help your neighbour be quiet",
+	body: "<blockquote cite=\"https://idiallo.com/blog/teaching-my-neighbor-to-keep-the-volume-down\">After using the RF remote, I wondered: Why would anyone ever use an IR remote again? You didn't need a direct line of sight with the device you were controlling. I could actually stand in the kitchen and control the TV. It was amazing. But with the convenience of RF came other problems that IR users never had to worry about. Interference.<br><br>After several months of enjoying my service, one of my neighbors, the loudest in the building, also switched to Dish Network. And he also got the RF remote. This was the type of neighbor who would leave the house with the TV on, volume blasting.<br><br>One day, I was in the living room watching TV when the channel just flipped. I must have accidentally hit a button, so I changed it back. But not a few seconds later, the channel changed again. Then the volume went up. I figured my sister must have had the RF remote and was messing with me. But no, the remote was in my hand. I assumed something was wrong with it.</blockquote>",
+	sources: {
+		"Ibrahim Diallo": "https://idiallo.com/blog/teaching-my-neighbor-to-keep-the-volume-down"
+	},
+	comment: "you can probably infer what happened. it is actually a very entertaining and highly relatable article. go read it!"
+  },
+  {
+	date: "2026-02-02",
+	category: "random",
+	title: "\"We can't send mail more than 500 miles,\"",
+	body: "<blockquote cite=\"https://web.mit.edu/jemorris/humor/500-miles\">I almost regret posting the story to a wide audience, because it makes a great tale over drinks at a conference. :-)</blockquote>",
+	sources: {
+		"Trey Harris": "https://web.mit.edu/jemorris/humor/500-miles"
+	},
+	comment: "it really is a good <a href=\"https://web.mit.edu/jemorris/humor/500-miles\">story</a>...!"
+  },
+  {
+	date: "2026-02-02",
+	category: "career",
+	title: "doing the thing is doing the thing",
+	body: "<blockquote cite=\"https://www.softwaredesign.ing/blog/doing-the-thing-is-doing-the-thing\">Thinking about doing the thing is not doing the thing.<br>Dreaming about doing the thing is not doing the thing.<br>Visualizing success from doing the thing is not doing the thing.<br>Waiting to feel ready to do the thing is not doing the thing.<br>Talking about doing the thing is not doing the thing.<br>Explaining the thing to others is not doing the thing.<br>Arguing online about the thing is not doing the thing.<br>Announcing that you’ll start the thing is not doing the thing.<br>Listening to podcasts about doing the thing is not doing the thing.<br>Watching tutorials about doing the thing is not doing the thing.<br>Reading threads about how others did the thing is not doing the thing.<br>Planning the perfect system for the thing is not doing the thing.<br>Buying tools for the thing is not doing the thing.<br>Reorganizing your workspace for the thing is not doing the thing.<br>Feeling guilty about not doing the thing is not doing the thing.<br>Being “busy” instead of doing the thing is not doing the thing.<br>Telling yourself you’ll start tomorrow is not doing the thing.<br></blockquote>",
+	sources: {
+		"Prakhar Gupta": "https://www.softwaredesign.ing/blog/doing-the-thing-is-doing-the-thing"
+	},
+	comment: "probably not what you want to hear… but maybe exactly what some of us (me included ;-P) need to hear...!"
+  },
+  {
 	date: "2026-01-30",
 	category: "poetry",
 	title: "perfection",
