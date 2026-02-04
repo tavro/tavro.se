@@ -1,0 +1,17 @@
+# the network is occupied
+
+for a long time i wanted to write this post, but i was not emotionally ready to publish these strong opinions online, in my name. my friends have definitely heard me rant about this before, and maybe they have wanted my unfiltered take. so here it is (maybe you can see it as a conspiracy theory, even). for the record, there are good things about this system and there are, believe it or not, good actors, companies, people, etc. as well! misunderstand me correctly! i take extreme positions in this text to make points come across, to make things easier to understand. if you want a more nuanced picture, reach out to me directly, and let us have a conversation about it. hello@tavro.se
+
+everyone i know has internet access. that phrase assumes you are being let in somewhere. you are being permitted. but you are not gaining access to an open infrastructure. you are being allowed to use a private network owned by corporations that no one voted for. and if you control the last mile (that is, the connection to the home or device), you have power. and that last mile, in most places, is owned by a handful of private corporations that operate like monopolies. that is not just infrastructure, that is, as i just said, power. from a hacker’s perspective (me), this system is garbage.
+
+if someone showed me a network design with centralized choke points, mandatory intermediaries, opaque traffic shaping, passive mass logging and incentives aligned against users, my first question would be, “who is abusing it?”, because someone always is. and internet service providers sit at the perfect layer. they are low enough to see everything you do and high enough to deny responsibility for it. they do not need exploits, because, they own the switch.
+
+telecom monopolies figured this out a century ago. at&t did not just sell phones, they decided who could connect and what devices were legal. that monopoly had to be broken up by government antitrust action because its power was too great. let me make an even more extreme comparison to get the message across. empires did not conquer solely with weapons. they built railroads and ports, or, simply put, “infrastructure that helped everyone”, but it might have been used for surveillance and control. isps do the same thing digitally. they tax usage and they choose how traffic is prioritized and routed. it is digital colonialism. modern states do not want to censor directly. that is visible and political. what i am saying is that isps log by default and they “comply lawfully” with government requests and they operate as “private companies”. that is genius! i like to call this “control without fingerprints”.
+
+a free market at the physical layer is a lie. if you only have one or two providers for local access, you do not have real choice. and internet access today is required for survival. you have to use it for work, school, communication. even if you do not want to. this post is about who controls the internet. any system that controls something is political by design. the early internet was built to route around damage. isps today are single points of failure. technically, politically and morally. the internet did not get free, it got “privatized”. for now, every packet you send is traveling through hostile territory, in my opinion.
+
+act accordingly!
+
+---
+
+if you want to dive deeper into internet governance [this is a great entry point](https://en.wikipedia.org/wiki/Internet_governance)
