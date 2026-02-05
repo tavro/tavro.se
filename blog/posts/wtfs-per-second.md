@@ -32,8 +32,6 @@ we also looked at garvin's 5 views of quality, and a collection of software qual
 
 for some, quality is correctness. for others, it is speed of change or user experience. these perspectives are not wrong, they might just be incomplete in different ways, but not wrong. quality is situational and depends on context.
 
-for me, from now on, one simple way to improve quality is saying “this increases my wtf rate” out loud (and hopefully having your co-workers actually listen).
-
 my manager shared a story i really liked:
 
 ![](https://supremepeoplescourtmonitor.com/wp-content/uploads/2016/12/story25i1.gif)
@@ -43,6 +41,8 @@ you have probably heard [this story](https://en.wikipedia.org/wiki/Blind_men_and
 > the moral of the parable is that humans have a tendency to claim absolute truth based on their limited, subjective experience as they ignore other people's limited, subjective experiences which may be equally true.
 
 but my manager made it about several blind people trying to figure out what they have in front of them. each describes what they perceive, from their perspective, and together they create the full picture. and that can be applied to software quality.
+
+for me, from now on, one simple way to improve quality is saying “this increases my wtf rate” out loud (and hopefully having your co-workers actually listen).
 
 sessions like this reduce disagreement and lower future friction. more teams should talk about this. over time, i think it will lead to fewer wtfs per second.
 
