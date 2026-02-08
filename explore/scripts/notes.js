@@ -1,5 +1,25 @@
 const entries = [
   {
+        title: "i miss thinking hard",
+        category: "ai",
+        date: "2026-02-05",
+        body: "<blockquote cite=\"https://www.jernesto.com/articles/thinking_hard\">I believe my personality is built on two primary traits:<br> 1. The Builder (The desire to create, ship, and be pragmatic).<br> 2. The Thinker (The need for deep, prolonged mental struggle).<br><br>[...]<br><br>It (software engineering) satisfied The Builder (feeling productive and pragmatic by creating useful things) and The Thinker (solving really hard problems). Thinking back, the projects where I grew the most as an engineer were always the ones with a good number of really hard problems that needed creative solutions.<br><br>But recently, the number of times I truly ponder a problem for more than a couple of hours has decreased tremendously.<br><br>Yes, I blame AI for this.<br><br>I am currently writing much more, and more complicated software than ever, yet I feel I am not growing as an engineer at all. When I started meditating on why I felt “stuck,” I realized I am starving The Thinker.<br><br>“Vibe coding” satisfies the Builder. It feels great to see to pass from idea to reality in a fraction of a time that would take otherwise. But it has drastically cut the times I need to came up with creative solutions for technical problems. I know many people who are purely Builders, for them this era is the best thing that ever happened. But for me, something is missing.</blockquote>",
+        sources: {
+                "Ernesto": "https://www.jernesto.com/articles/thinking_hard"
+        },
+        comment: "wow, this post unlocked something for me. i would categorize myself in the exact same way, but i would never thought about the reason for disliking the direction of AI, or, more specifically, the adoption of vibe coding as being that i am starving the thinker. that is a really interesting idea! there are a lot of great points in this article, by the way."
+  },
+  {
+        title: "first, make me care",
+        category: "random",
+        date: "2026-02-05",
+        body: "<blockquote cite=\"https://gwern.net/blog/2026/make-me-care\">When writing, first, make the reader care, one way or another. Because if I am not hooked by the first screen, I will probably not keep reading—no matter how good the rest of it is!<br><br>So, if you have done something cool, or you have studied something for a long time, or you have thought something interesting, and you are writing it up, and you are at a loss how to get started, try to extract out the key phrase. What do you find yourself ranting about to people repeatedly? What does the Wikipedia entry miss that frustrates you? How would the world be different if this were not true? If you were telling a friend in a rush why you were excited to write this down, what would you say? Just say that! Just… start with the interesting part first.</blockquote>",
+        sources: {
+                "Gwern Branwen": "https://gwern.net/blog/2026/make-me-care"
+        },
+        comment: "i am a very dedicated and loyal reader. if i start reading something, i usually read everything, not just the first or last paragraph. because of that, i have never really tried writing in a way that specifically catches people's attention or makes them care. when i tell stories to friends or have conversations, i often do this naturally. it is hard though, to know what actually makes people care. interesting blog post!"
+  },
+  {
 	date: "2026-02-02",
 	category: "random",
 	title: "help your neighbour be quiet",
