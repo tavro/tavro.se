@@ -6,7 +6,7 @@ i have a goal of building an operating system from scratch, including the langua
 
 ## philosophy
 
-this is a systems literacy project before it is a software artifact. ugly, working code beats elegant and optimized code, and documentation is part of the system! the project is intentionally paced in years.
+this is a systems literacy project before it is a software artifact. ugly, working code beats elegant and optimized code, and documentation is part of the system!
 
 ## high level architecture
 
@@ -15,7 +15,7 @@ these names are temporary, i like naming things early as it helps thinking, even
 - **moonshot** is the [operating system](https://en.wikipedia.org/wiki/Operating_system) as a whole
 - **c0** is the [stage-0 bootstrap language](https://en.wikipedia.org/wiki/Bootstrapping_(compilers))
 - **coff** is the compiler toolchain
-- **knekt** the [kernel](https://en.wikipedia.org/wiki/Kernel_(operating_system))
+- **knekt** is the [kernel](https://en.wikipedia.org/wiki/Kernel_(operating_system))
 - **jenna** is the [memory management](https://en.wikipedia.org/wiki/Memory_management_(operating_systems)) subsystem
 - **chrone** is the [scheduler](https://en.wikipedia.org/wiki/Scheduling_(computing)) and timing subsystem
 - **jakel** is the [filesystem](https://en.wikipedia.org/wiki/File_system) and storage layer
@@ -24,118 +24,61 @@ these names are temporary, i like naming things early as it helps thinking, even
 
 ## plan
 
-### year 1
+EDIT: i managed to complete what i planned for the first year within two weeks, and i did not stick exactly to what i wrote here before, so i am intentionally removing what was here before to make this post more helpful (i am using this post when planning what to work on next).
 
-the first year i want to focus on understanding the [boot process](https://en.wikipedia.org/wiki/Booting) end-to-end and try to run my own code directly on the hardware.
+### milestone 1
 
-#### q1 (- mar 2026)
-
-getting the absolute minimum code running on the machine. meaning building a minimal [boot sector](https://en.wikipedia.org/wiki/Boot_sector), achieving serial output under [QEMU](https://en.wikipedia.org/wiki/QEMU), writing a basic [linker](https://en.wikipedia.org/wiki/Linker_(computing)) script and becoming comfortable with low-level debugging using QEMU and [GDB](https://en.wikipedia.org/wiki/GNU_Debugger).
-
-#### q2 (apr - jun 2026)
-
-set up [GDT](https://en.wikipedia.org/wiki/Global_Descriptor_Table) and [IDT](https://en.wikipedia.org/wiki/Interrupt_descriptor_table) and begin handling basic interrupts.
-
-#### q3 (jul - sep 2026)
-
-add simple main loop to knekt, text output to the screen and a panic handler that can produce stack traces.
-
-#### q4 (oct - dec 2026)
-
-the system is booted on real hardware and the build process is made reproducible and documentation is written that explains the entire boot process.
+- focus on understanding the [boot process](https://en.wikipedia.org/wiki/Booting) end-to-end and try to run my own code in [QEMU](https://en.wikipedia.org/wiki/QEMU) virt machine.
+- writing a basic [linker](https://en.wikipedia.org/wiki/Linker_(computing)) script and becoming comfortable with low-level debugging using QEMU and [GDB](https://en.wikipedia.org/wiki/GNU_Debugger).
+- add simple main loop to knekt, text output to the screen and a panic handler that can produce stack traces.
+- build process is made reproducible and documentation is written that explains the entire boot process.
 
 i will consider this part done when i can explain the boot sequence without any notes.
 
-### year 2
+### milestone 2
 
-the goal for the second year will be to create a tiny programming language that is usable for systems code and use it to build parts of the kernel.
-
-#### q1 (jan - mar 2027)
-
-c0 syntax and semantics are specified clearly enough to implement and an initial compiler is written in an existing language.
-
-#### q2 (apr - jun 2027)
-
-the compiler emits assembly or [object files](https://en.wikipedia.org/wiki/Object_file) and is supported by a minimal [runtime](https://en.wikipedia.org/wiki/Runtime_system) including a stack and heap allocator. c0 should be capable of expressing simple systems code.
-
-#### q3 (jul - sep 2027)
-
-c0 is used for rewriting selected knekt components. there exists a [ffi](https://en.wikipedia.org/wiki/Foreign_function_interface) boundary between c0, assembly and any remaining c code.
-
-#### q4 (oct - dec 2027)
-
-this is where the compiler becomes self hosting. cross-compilation from the host os to moonshot.
+- create a tiny programming language (c0) that is usable for systems code and use it to build parts of the kernel.
+- c0 syntax and semantics are specified clearly enough to implement and an initial compiler is written in risc-v assembly.
+- the compiler emits risc-v assembly and is supported by a minimal [runtime](https://en.wikipedia.org/wiki/Runtime_system). 
+- compiler becomes self hosting.
 
 i will consider this part done when moonshot boots using binaries built by c0 and the compiler can compile itself.
 
-### year 3
+### milestone 3
 
-for the third year i want to focus on rewriting the kernel using c0 and introduce proper operating system abstractions.
+- rewriting the kernel using c0 (or other language in the compiler toolchain) and introduce proper operating system abstractions.
+- jenna is introduced as a physical and virtual memory subsystem.
+- the chrone scheduler is added.
+- a [system call](https://en.wikipedia.org/wiki/System_call) interface is introduced together with a simple user mode programs can execute without constant kernel intervention.
 
-#### q1 (jan - mar 2028)
+i am not sure when to consider this part done, lol. i will probably divide this into sub-milestones when i get here.
 
-clarified modules and logging / error handling is unified so that failures produce helpful information.
+### milestone 4
 
-#### q2 (apr - jun 2028)
-
-jenna is introduced as a physical and virtual memory subsystem.
-
-#### q3 (jul - sep 2028)
-
-the chrone scheduler is added.
-
-#### q4 (oct - dec 2028)
-
-a [system call](https://en.wikipedia.org/wiki/System_call) interface is introduced together with a simple user mode programs can execute without constant kernel intervention.
-
-i am not sure when to consider this part done, maybe when the kernel runs for x amount of time without crashing, lol.
-
-### year 4
-
-for year four i want to focus on persistent storage and basic command line usability.
-
-#### q1 (jan - mar 2029)
-
-first version of jakel.
-
-#### q2 (apr - jun 2029)
-
-a virtual filesystem layer is added along with an permissions model.
-
-#### q3 (jul - sep 2029)
-
-add raket as init system and shell.
-
-#### q4 (oct - dec 2029)
-
-introduce primitive [package manager](https://en.wikipedia.org/wiki/Package_manager) and write system level documentation.
+- persistent storage and basic command line usability.
+- first version of jakel.
+- virtual filesystem layer is added along with an permissions model.
+- add raket as init system and shell.
+- introduce primitive [package manager](https://en.wikipedia.org/wiki/Package_manager) and write system level documentation.
 
 i will consider this done when following flow works: boot -> login -> shell -> edit files -> reboot, and data is persistent across restarts.
 
-### year 5
+### milestone
 
-focus for year five will be basic connectivity and general improvements. i will see this as the last year for my current plan, and i will extend it when we reach year five, if we do.
+i will see this as the last milestone for my current plan, and i will add more milestones when this is completed, if it ever will be.
 
-#### q1 (jan - mar 2030)
-
-implement network driver and minimal version of verk stack.
-
-#### q2 (apr - jun 2030)
-
-add user space networking tools and logging.
-
-#### q3 (jul - sep 2030)
-
-add permissions and isolation mechanisms.
-
-#### q4 (oct - dec 2030)
-
-audit full system and write architectural documentation. revise roadmap into a longer and more informed ten-year plan.
+- implement network driver and minimal version of verk stack
+- add user space networking tools and logging.
+- add permissions and isolation mechanisms.
+- audit full system and write architectural documentation.
 
 i will consider this done when the system can run unattended and bugs can be tracked down.
 
 ---
 
-this plan exists just so that when motivation is low or health is bad, or time is low, there is still a direction. progress can happen through thinking and writing or clarifying ideas, not just through code. this plan is intentionally incomplete and subject to change. its real purpose is orientation and future revisions or new blog posts related to this are expected.
+## blog posts related to this one
+- [write-up for first week](https://tavro.se/blog.html?post=moonshot-os-devlog-week-1)
+
+this plan exists just so that when motivation is low or time is low, there is still a direction. progress can happen through thinking and writing or clarifying ideas, not just through code. this plan is intentionally incomplete and subject to change.
 
 wish me luck! :o)
