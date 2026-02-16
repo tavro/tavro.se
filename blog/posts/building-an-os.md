@@ -24,7 +24,7 @@ these names are temporary, i like naming things early as it helps thinking, even
 
 ## plan
 
-EDIT: i managed to complete what i planned for the first year within two weeks, and i did not stick exactly to what i wrote here before, so i am intentionally removing what was here before to make this post more helpful (i am using this post when planning what to work on next).
+*EDIT: i managed to complete what i planned for the first year within two weeks, and i did not stick exactly to what i wrote here before, so i am intentionally removing what was here before to make this post more helpful (i am using this post when planning what to work on next).*
 
 ### milestone 1
 
@@ -63,7 +63,7 @@ i am not sure when to consider this part done, lol. i will probably divide this 
 
 i will consider this done when following flow works: boot -> login -> shell -> edit files -> reboot, and data is persistent across restarts.
 
-### milestone
+### milestone 5
 
 i will see this as the last milestone for my current plan, and i will add more milestones when this is completed, if it ever will be.
 
@@ -77,7 +77,8 @@ i will consider this done when the system can run unattended and bugs can be tra
 ---
 
 ## blog posts related to this one
-- [write-up for first week](https://tavro.se/blog.html?post=moonshot-os-devlog-week-1)
+- [write-up for week 1](https://tavro.se/blog.html?post=moonshot-os-devlog-week-1)
+- [write-up for week 2](https://tavro.se/blog.html?post=moonshot-os-devlog-week-2)
 
 this plan exists just so that when motivation is low or time is low, there is still a direction. progress can happen through thinking and writing or clarifying ideas, not just through code. this plan is intentionally incomplete and subject to change.
 
