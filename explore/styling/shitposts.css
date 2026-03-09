@@ -1,0 +1,14 @@
+.web-buttons img {
+    width: 88px;
+    height: 31px;
+}
+
+.ad-header {
+        color: #6fcf6f;
+        width: 100%;
+        height: 128px;
+        border: 1px solid #6fcf6f;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+}

@@ -6,10 +6,7 @@
 		<meta name="viewport" content="width=device-width,initial-scale=1">
 		<link rel="icon" type="image/x-icon" href="../res/icon.png">
 		<link rel="stylesheet" href="../common/styling/styles.css">
-		<link rel="stylesheet" href="styling/explore.css">
-		<script src="../common/scripts/main.js"></script>
-		<script src="scripts/explore.js"></script>
-		<script src="scripts/notes.js"></script>
+		<link rel="stylesheet" href="styling/shitposts.css">
 	</head>
 	
 	<body>
@@ -22,15 +19,13 @@
 						<li><a id="resume" href="../resume.html">/resume</a></li>
 						<li><a id="blog" href="../blog.html">/blog</a></li>
 						<li><a id="now" href="../now/index.html">/now</a></li>
+						<li><a id="explore" class="active" href="index.html">&lt;explore/&gt;</a></li>
 					</ul>
 				</nav>
 				<nav>
 					<ul>
 						<li><a href="#" class="active">└</a></li>
-						<li><a id="explore" href="#" class="active">&lt;explore/&gt;</a></li>
-						<li><a id="using" href="using.html">/using</a></li>
-						<li><a id="reading" href="reading.html">/reading</a></li>
-						<li><a id="favorites" href="favorites.html">/favorites</a></li>
+						<li><a id="shitposts" href="#" class="active">::shitposts</a></li>
 					</ul>
 				</nav>
 			</div>
@@ -42,59 +37,69 @@
 	                        <p>this page is inspired by my friend <mark><a href="http://thorsson.tplinkdns.com:55744">Harald Thorsson</a></mark>'s website, which is full of personality. you should check it out!</p>
 
 	                        <div class="vertical-pair">
-                                        <h3>ads</h3>
-                                        <div>
+                                        <div class="ad-header">
                                                 <p>reach out to th@tavro.se to advertise here</p>
                                         </div>
                                 </div>
 
-	                        <div class="vertical-pair">
-                                        <h3>web buttons</h3>
+	                        <div class="vertical-pair web-buttons">
                                         <div class="horizontal-pair">
-                                                <img src="./shitposts/vim.vialle.love.anim.gif" />
-                                                <img src="./shitposts/graphicdesign.gif" />
-                                                <img src="./shitposts/gnu-linux.gif" />
-                                                <img src="./shitposts/tumblr2018.gif" />
-                                                <img src="./shitposts/gh-pages-bo.gif" />
-                                                <img src="./shitposts/toplist-banner.gif" />
-                                                <img src="./shitposts/get_java.gif" />
-                                                <img src="./shitposts/site_best_viewed_with_monitor.gif" />
-                                                <img src="./shitposts/fscripts.gif" />
-                                                <img src="./shitposts/screw.gif" />
-                                                <img src="./shitposts/2001.gif" />
-                                                <img src="./shitposts/gratis-sex-fotos.gif" />
-                                                <img src="./shitposts/4ever.gif" />
-                                                <img src="./shitposts/guestbook-button.gif" />
-                                                <img src="./shitposts/alienow.gif" />
-                                                <img src="./shitposts/hackerpowered.gif" />
-                                                <img src="./shitposts/antinazi.gif" />
-                                                <img src="./shitposts/hair.gif" />
-                                                <img src="./shitposts/antibanner.gif" />
-                                                <img src="./shitposts/htmldream.gif" />
-                                                <img src="./shitposts/imissxp.gif" />
-                                                <img src="./shitposts/js-warning.gif" />
-                                                <img src="./shitposts/another.gif" />
-                                                <img src="./shitposts/archlinux.gif" />
-                                                <img src="./shitposts/keep.gif" />
-                                                <img src="./shitposts/lovenow.gif" />
-                                                <img src="./shitposts/besteyes3.gif" />
-                                                <img src="./shitposts/chill_pill.gif" />
-                                                <img src="./shitposts/macbutton.gif" />
-                                                <img src="./shitposts/coffee.gif" />
-                                                <img src="./shitposts/mobiles.gif" />
-                                                <img src="./shitposts/mspaint.gif" />
-                                                <img src="./shitposts/cssdif.gif" />
-                                                <img src="./shitposts/cyberrot.gif" />
-                                                <img src="./shitposts/opera-ani_03mic.gif" />
-                                                <img src="./shitposts/donate.gif" />
-                                                <img src="./shitposts/powered-cpp.gif" />
-                                                <img src="./shitposts/email-icon.gif" />
-                                                <img src="./shitposts/propaganda.gif" />
-                                                <img src="./shitposts/fckfb.gif" />
-                                                <img src="./shitposts/rainbow_bev.gif" />
+                                                <a href="https://www.vim.org"><img src="./shitposts/buttons/vim.vialle.love.anim.gif" /></a>
+                                                <a href="./shitposts/design.html"><img src="./shitposts/buttons/graphicdesign.gif" /></a>
+                                                <a href="https://kernel.org"><img src="./shitposts/buttons/gnu-linux.gif" /></a>
+                                                <a href="https://docs.github.com/en/pages"><img src="./shitposts/buttons/gh-pages-bo.gif" /></a>
+                                                <a href="./shitposts/websites.html"><img src="./shitposts/buttons/toplist-banner.gif" /></a>
+                                                <a href="https://www.java.com/en/"><img src="./shitposts/buttons/get_java.gif" /></a>
+                                        </div>
+                                        <div class="horizontal-pair">
+                                                <img src="./shitposts/buttons/site_best_viewed_with_monitor.gif" />
+                                                <a href="./shitposts/scripts.html"><img src="./shitposts/buttons/fscripts.gif" /></a>
+                                                <img src="./shitposts/buttons/screw.gif" />
+                                                <img src="./shitposts/buttons/2001.gif" />
+                                                <a href="./shitposts/sex.html"><img src="./shitposts/buttons/gratis-sex-fotos.gif" /></a>
+                                                <!-- link to best friend -->
+                                                <img src="./shitposts/buttons/4ever.gif" />
+                                                <!-- TODO: guestbook.html
+                                                <a href="./shitposts/guestbook.html"><img src="./shitposts/buttons/guestbook-button.gif" />
+                                                -->
+                                        </div>
+                                        <div class="horizontal-pair">
+                                                <a href="./shitposts/alien.html"><img src="./shitposts/buttons/alienow.gif" /></a>
+                                                <a href="./shitposts/hacking.html"><img src="./shitposts/buttons/hackerpowered.gif" /></a>
+                                                <img src="./shitposts/buttons/antinazi.gif" />
+                                                <img src="./shitposts/buttons/hair.gif" />
+                                                <img src="./shitposts/buttons/anibanner.gif" />
+                                                <a href="https://win32.run"><img src="./shitposts/buttons/imissxp.gif" /></a>
+                                        </div>
+                                        <div class="horizontal-pair">
+                                                <!-- TODO: make button spin when clicking -->
+                                                <img src="./shitposts/buttons/js-warning.gif" />
+                                                <img src="./shitposts/buttons/another.gif" />
+                                                <a href="https://archlinux.org/download/"><img src="./shitposts/buttons/archlinux.gif" /></a>
+                                                <img src="./shitposts/buttons/lovenow.gif" />
+                                                <img src="./shitposts/buttons/besteyes3.gif" />
+                                                <a href="./shitposts/chill.html"><img src="./shitposts/buttons/chill_pill.gif" /></a>
+                                        </div>
+                                        <div class="horizontal-pair">
+                                                <a href="./shitposts/coffee.html"><img src="./shitposts/buttons/coffee.gif" /></a>
+                                                <img src="./shitposts/buttons/mobiles.gif" />
+                                                <a href="https://jspaint.app"><img src="./shitposts/buttons/mspaint.gif" /></a>
+                                                <a href="./shitposts/css.html"><img src="./shitposts/buttons/cssdif.gif" /></a>
+                                                <a href="./shitposts/rot.html"><img src="./shitposts/buttons/cyberrot.gif" /></a>
+                                                <a href="https://www.opera.com/opera"><img src="./shitposts/buttons/opera-ani_03mic.gif" /></a>
+                                        </div>
+                                        <div class="horizontal-pair">
+                                                <a href="./shitposts/donate.html"><img src="./shitposts/buttons/donate.gif" /></a>
+                                                <img src="./shitposts/buttons/powered-cpp.gif" />
+                                                <a href="mailto:th@tavro.se"><img src="./shitposts/buttons/email-icon.gif" /></a>
+                                                <a href="./shitposts/propaganda.html"><img src="./shitposts/buttons/propaganda.gif" /></a>
+                                                <!-- TODO: link to article about everything wrong with facebook -->
+                                                <img src="./shitposts/buttons/fckfb.gif" />
+                                                <img src="./shitposts/buttons/rainbow_bev.gif" />
                                         </div>
                                 </div>
 
+                                <!--
 	                        <div class="vertical-pair">
                                         <h3>GIFs</h3>
                                 </div>
@@ -105,7 +110,9 @@
 
 	                        <div class="vertical-pair">
                                         <h3>quotes</h3>
+                                        <blockquote>wtf is going on dude - swedish prime minister 2026</blockquote>
                                 </div>
+                                -->
                         </div>
 		</main>
 
