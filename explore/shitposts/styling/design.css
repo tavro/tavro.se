@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:wght@400;700&display=swap');
+
+body {
+	background-color: #0a0a0a;
+	background-image: url('../res/cloud.jpeg');
+	background-repeat: repeat;
+	font-family: 'Comic Neue', 'Comic Sans MS', cursive, sans-serif;
+	color: #ffffff;
+	margin: 0;
+	padding: 10px;
+}
+
+marquee h1 {
+	font-family: 'Comic Neue', 'Comic Sans MS', cursive;
+	color: #ff00ff;
+	text-shadow:
+		2px 2px 0 #00ffff,
+		-2px -2px 0 #ffff00,
+		2px -2px 0 #00ff00,
+		-2px 2px 0 #ff0000;
+	font-size: 2em;
+	margin: 10px 0;
+}
+
+a {
+	color: #00ffff;
+	text-decoration: underline;
+}
+
+a:visited {
+	color: #ff00ff;
+}
+
+a:hover {
+	color: #ffff00;
+	text-decoration: none;
+	background-color: #ff0000;
+}
+
+table {
+	border-collapse: separate;
+}
+
+td {
+	font-family: 'Comic Neue', 'Comic Sans MS', cursive;
+}
+
+img {
+	image-rendering: pixelated;
+}
+
+blink {
+	animation: blink 1s steps(2, start) infinite;
+}
+
+@keyframes blink {
+	to {
+		visibility: hidden;
+	}
+}
+
+::-webkit-scrollbar {
+	width: 16px;
+	height: 16px;
+}
+
+::-webkit-scrollbar-track {
+	background: #c0c0c0;
+	border: 2px inset #ffffff;
+}
+
+::-webkit-scrollbar-thumb {
+	background: #808080;
+	border: 2px outset #ffffff;
+}
+
+::-webkit-scrollbar-button {
+	background: #c0c0c0;
+	border: 2px outset #ffffff;
+}
+
+::selection {
+	background: #0000ff;
+	color: #ffffff;
+}
+
+h3 {
+	font-family: 'Comic Neue', 'Comic Sans MS', cursive;
+	color: #00ffff;
+}
+
+ul {
+	list-style-type: square;
+}
+
+li {
+	margin: 5px 0;
+}
+
+.counter {
+	display: inline-block;
+	background: #000000;
+	border: 2px inset #808080;
+	padding: 5px 8px;
+	font-family: 'Courier New', monospace;
+	font-size: 1.5em;
+	font-weight: bold;
+	color: #00ff00;
+	text-shadow: 0 0 5px #00ff00;
+	margin: 2px;
+}
