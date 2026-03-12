@@ -58,9 +58,3 @@
 	color: #ddd;
 }
 
-.bounty-list li::before {
-	content: "\2713 ";
-	color: #6fcf6f;
-	margin-right: 8px;
-}
-
