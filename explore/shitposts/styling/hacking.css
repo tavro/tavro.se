@@ -52,9 +52,8 @@
 
 .bounty-list li {
 	padding: 6px 12px;
-	background: rgba(111, 207, 111, 0.05);
-	border-left: 2px solid #6fcf6f;
+	background: rgba(32, 136, 12, 0.1);
+	border-left: 2px solid #20880c;
 	border-radius: 0 4px 4px 0;
-	color: #ddd;
 }
 
