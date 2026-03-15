@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>tavro - explore</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1">
+		<link rel="icon" type="image/x-icon" href="../../res/icon.png">
+		<link rel="stylesheet" href="../../common/styling/styles.css">
+	</head>
+	
+	<body>
+		<header>
+			<div class="vertical-pair">
+				<h1>th@tavro.se:~/$ <span id="cmd"><span class="cursor"></span></span></h1>
+				<nav>
+					<ul>
+						<li><a id="home" href="../../index.html" class="active">~</a></li>
+						<li><a id="resume" href="../../resume.html">/resume</a></li>
+						<li><a id="blog" href="../../blog.html">/blog</a></li>
+						<li><a id="now" href="../../now/index.html">/now</a></li>
+						<li><a id="explore" class="active" href="../index.html">&lt;explore/&gt;</a></li>
+					</ul>
+				</nav>
+				<nav>
+					<ul>
+						<li><a href="#" class="active">└</a></li>
+						<li><a id="" href="../shitposts.html">::shitposts<span style="color:rgb(111, 207, 111); font-weight:bold;">::template</span></a></li>
+					</ul>
+				</nav>
+			</div>
+		</header>
+
+		<main>
+                        <div class="vertical-pair-lg">
+	                        <h2>it is late</h2>
+                                <p>your brain is slightly tired. perfect time to explore strange things.</p>
+                                <button>stay up</button>
+                        </div>
+                        <script>
+	                const urls = [
+		                "https://screamintothevoid.com",
+		                "https://make-everything-ok.com",
+		                "https://papertoilet.com",
+		                "https://pointerpointer.com",
+		                "https://en.wikipedia.org/wiki/Wikipedia:Unusual_articles",
+		                "https://radio.garden",
+		                "https://www.pixelthoughts.co/",
+		                "https://www.window-swap.com/Window",
+		                "https://www.music-map.com",
+		                "https://neal.fun",
+		                "https://thispersondoesnotexist.com",
+		                "https://zzz.zoomquilt.org",
+	        	        "https://zzz.zoomquilt2.com"
+	                ];
+
+	                const button = document.querySelector("button");
+
+	                button.addEventListener("click", () => {
+		                const randomIndex = Math.floor(Math.random() * urls.length);
+		                window.location.href = urls[randomIndex];
+	                });
+                        </script>
+		</main>
+
+		<footer>
+			<small>this website was written by a human, by hand, using HTML, CSS and JavaScript.</small>
+		</footer>
+	</body>
+</html>
