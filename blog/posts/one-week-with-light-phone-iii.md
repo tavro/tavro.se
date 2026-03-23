@@ -2,7 +2,7 @@
 
 when i was younger i spent a huge amount of time on my phone. snapchat exploded in popularity when i was a teenager, and social media was a big part of my life. over time i started realizing how cringe a lot of my online behavior was, and i slowly began taking steps away from social media. unfortunately, big companies own a lot of the data connected to those platforms, and in some cases it is ridiculously hard to get rid of it. and if you know me, you know that i have a lot of integrity, and i really care about your and my integrity. big companies are collecting your data and selling it for profit. this is one of the reasons i am using a de-googled phone. i have been using the light phone for one week now, and i have tried every feature. this is my review.
 
-TODO: IMAGE
+![light phone iii](../../res/phone.jpg)
 
 ## tools
 
@@ -28,10 +28,10 @@ it has the features you want from a calendar. you can set reminders, attach an a
 
 i have only used the photo mode, so not video or selfie mode. and i have only taken four photos so far. the only confusing thing is how you take the actual photo. the UX could be better. but it works, and the quality is ok. i will attach the photos i have taken.
 
-TODO: IMAGE
-TODO: IMAGE
-TODO: IMAGE
-TODO: IMAGE
+![photo 1](../../res/first.jpg)
+![photo 2](../../res/second.jpg)
+![photo 3](../../res/third.jpg)
+![photo 4](../../res/fourth.jpg)
 
 ### directions
 
