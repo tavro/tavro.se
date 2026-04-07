@@ -21,7 +21,26 @@ document.addEventListener("DOMContentLoaded", () => {
     "snowy-university-campus.jpg",
     "szimpla-kert-in-budapest.jpg",
     "trying-whiskey-in-edinburgh.jpg",
-    "using-my-first-film-camera.jpg"
+    "using-my-first-film-camera.jpg",
+    "artsy-photograph-in-ryd.jpg",
+    "beer-yoga-in-skeda-udde.jpg",
+    "birdies-exploring.jpg",
+    "champaign-tasting.jpg",
+    "christmas-in-ryd.jpg",
+    "early-interaction-with-boye.jpg",
+    "fast-food-comparison.jpg",
+    "fika-concert-ostergotland-county.jpg",
+    "funky-piano-grooves.jpg",
+    "late-night-adventures.jpg",
+    "liseberg.jpg",
+    "mewing-and-mogging.jpg",
+    "moving-from-ryd.jpg",
+    "post-birthday-party.jpg",
+    "sauna-hotel-gastis-2.jpg",
+    "sauna-hotel-gastis.jpg",
+    "summer-hangout-in-smaland.jpg",
+    "summer-vacation-with-friends.jpg",
+    "varldens-bar-norrkoping.jpg",
   ];
 
   const overlay = document.getElementById("lightbox-overlay");
