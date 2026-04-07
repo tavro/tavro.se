@@ -41,6 +41,23 @@ document.addEventListener("DOMContentLoaded", () => {
     "summer-hangout-in-smaland.jpg",
     "summer-vacation-with-friends.jpg",
     "varldens-bar-norrkoping.jpg",
+    "animal-hangout.jpg",
+    "beer-yoga-in-skeda-udde-2.jpg",
+    "bowling.jpg",
+    "dykallan.jpg",
+    "film-photography-improvising.jpg",
+    "first-night-in-new-apartment.jpg",
+    "green-on-green-on-green.jpg",
+    "gryt-skargard.jpg",
+    "halloween-prep.jpg",
+    "kerala-resort-2.jpg",
+    "kerala-resort.jpg",
+    "reception-period-feelz.jpg",
+    "red-room.jpg",
+    "studenthuset.jpg",
+    "summer-night-agatan.jpg",
+    "summer-party.jpg",
+    "szimpla-kert-2.jpg",
   ];
 
   const overlay = document.getElementById("lightbox-overlay");
