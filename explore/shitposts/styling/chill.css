@@ -1,0 +1,30 @@
+.breath-wrap {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 16px;
+	padding: 32px 0;
+}
+
+.breath-circle {
+	width: 140px;
+	height: 140px;
+	border-radius: 50%;
+	background: radial-gradient(circle at 35% 35%, #6fcf6f, #20880c);
+	transform: scale(0.6);
+	transition: transform 4s ease-in-out;
+}
+
+.breath-circle.inhale {
+	transform: scale(1);
+}
+
+.breath-circle.exhale {
+	transform: scale(0.6);
+}
+
+.breath-label {
+	font-size: 1.1em;
+	color: #6fcf6f;
+	min-height: 1.4em;
+}

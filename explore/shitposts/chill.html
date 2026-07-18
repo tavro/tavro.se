@@ -6,8 +6,9 @@
 		<meta name="viewport" content="width=device-width,initial-scale=1">
 		<link rel="icon" type="image/x-icon" href="../../res/icon.png">
 		<link rel="stylesheet" href="../../common/styling/styles.css">
+		<link rel="stylesheet" href="./styling/chill.css">
 	</head>
-	
+
 	<body>
 		<header>
 			<div class="vertical-pair">
@@ -24,21 +25,52 @@
 				<nav>
 					<ul>
 						<li><a href="#" class="active">└</a></li>
-						<li><a id="" href="../shitposts.html">::shitposts<span style="color:rgb(111, 207, 111); font-weight:bold;">::template</span></a></li>
+						<li><a id="" href="../shitposts.html">::shitposts<span style="color:rgb(111, 207, 111); font-weight:bold;">::chill</span></a></li>
 					</ul>
 				</nav>
 			</div>
 		</header>
 
 		<main>
-                        <div class="vertical-pair-lg">
-	                        <h2>template</h2>
-                                <p>template</p>
-                        </div>
+			<div class="vertical-pair-lg">
+				<h2>chill</h2>
+				<p>i burned out earlier this year. this page exists as a reminder to myself as much as anyone else, take a break.</p>
+
+				<div class="breath-wrap">
+					<div class="breath-circle" id="circle"></div>
+					<p class="breath-label" id="label">breathe in...</p>
+				</div>
+			</div>
 		</main>
 
 		<footer>
 			<small>this website was written by a human, by hand, using HTML, CSS and JavaScript.</small>
 		</footer>
+
+		<script>
+			const phases = [
+				{ label: "breathe in...", cls: "inhale", duration: 4000 },
+				{ label: "hold...", cls: null, duration: 4000 },
+				{ label: "breathe out...", cls: "exhale", duration: 4000 },
+				{ label: "hold...", cls: null, duration: 4000 },
+			];
+
+			const circle = document.getElementById("circle");
+			const label = document.getElementById("label");
+			let i = 0;
+
+			function cycle() {
+				const phase = phases[i];
+				label.textContent = phase.label;
+				if (phase.cls) {
+					circle.classList.remove("inhale", "exhale");
+					circle.classList.add(phase.cls);
+				}
+				i = (i + 1) % phases.length;
+				setTimeout(cycle, phase.duration);
+			}
+
+			cycle();
+		</script>
 	</body>
 </html>
