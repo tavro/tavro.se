@@ -1,0 +1,12 @@
+.pride-glow-bar {
+	height: 14px;
+	border-radius: 7px;
+	background: linear-gradient(90deg, #ff0018, #ffa52c, #ffff41, #008018, #0000f9, #86007d, #ff0018);
+	background-size: 200% 100%;
+	animation: shimmer 6s linear infinite;
+}
+
+@keyframes shimmer {
+	from { background-position: 0% 0; }
+	to { background-position: 200% 0; }
+}
