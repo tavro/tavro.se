@@ -69,7 +69,7 @@ document.addEventListener("DOMContentLoaded", () => {
     wrapper.className = "album-item";
 
     const img = document.createElement("img");
-    img.src = `./album/${filename}`;
+    img.src = `./album/thumbs/${filename}`;
     img.loading = "lazy";
     img.alt = "";
 
@@ -77,8 +77,9 @@ document.addEventListener("DOMContentLoaded", () => {
       .replace(/\.[^/.]+$/, "")
       .replace(/-/g, " ");
 
+    // the grid shows downscaled thumbnails; the lightbox loads the full-size file
     wrapper.addEventListener("click", () => {
-      overlayImage.src = img.src;
+      overlayImage.src = `./album/${filename}`;
       overlayCaption.textContent = captionText;
       overlay.style.display = "flex";
     });

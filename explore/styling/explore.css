@@ -67,6 +67,11 @@
 	color: #555;
 }
 
+/* six links no longer fit on one line on a phone */
+.explorer {
+        flex-wrap: wrap;
+}
+
 .explorer a {
         color: #555;
 }

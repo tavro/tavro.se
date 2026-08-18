@@ -1,3 +1,11 @@
+.table-scroll {
+  /* the tables have a min-content width wider than a phone screen,
+     so let them scroll sideways inside the page instead of pushing it */
+  max-width: 100%;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
 table {
   border-collapse: collapse;
   width: 100%;
@@ -17,4 +25,12 @@ td {
 th {
   color: white;
   letter-spacing: 1px;
+}
+
+@media (max-width: 600px) {
+  th,
+  td {
+    padding: 6px;
+    font-size: 13px;
+  }
 }

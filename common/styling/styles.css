@@ -26,11 +26,22 @@ body {
 	color: white;
 	display: grid;
 	grid-template-rows: auto 1fr auto;
+	overflow-wrap: break-word;
+}
+
+/* grid items default to min-width: auto, which lets wide content
+   (tables, code blocks, button rows) stretch the column past the
+   viewport instead of staying inside it */
+header,
+main,
+footer {
+	min-width: 0;
 }
 
 nav ul {
 	list-style: none;
 	display: flex;
+	flex-wrap: wrap;
 	gap: 8px;
 }
 
@@ -129,4 +140,28 @@ mark a {
 	display: flex;
 	flex-direction: column;
 	gap: 24px;
+}
+
+.vertical-pair-xl {
+	display: flex;
+	flex-direction: column;
+	gap: 40px;
+}
+
+.vertical-pair > *,
+.vertical-pair-md > *,
+.vertical-pair-lg > *,
+.vertical-pair-xl > * {
+	min-width: 0;
+}
+
+/* rows of 88x31 web buttons; they overflow a phone screen without wrapping */
+.web-buttons,
+.web-buttons .horizontal-pair {
+	flex-wrap: wrap;
+}
+
+.web-buttons img {
+	width: 88px;
+	height: 31px;
 }

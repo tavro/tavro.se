@@ -1,7 +1,10 @@
 #post-content {
   max-width: 720px;
-  margin: 0 auto;
+  /* no auto side margins: they cancel flex stretch, which would make this
+     box size to its widest code block instead of to the page */
+  margin: 0;
   padding: 1.5rem;
+  overflow-wrap: break-word;
   font-family: system-ui, -apple-system, BlinkMacSystemFont,
                "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell,
                "Helvetica Neue", Arial, sans-serif;
@@ -127,4 +130,15 @@
   height: auto;
   margin: 1.5rem auto;
   border-radius: 6px;
+}
+
+@media (max-width: 600px) {
+  #post-content {
+    /* the body already provides 20px of side padding on phones */
+    padding: 1.5rem 0;
+  }
+
+  #post-content h1 { font-size: 1.75rem; }
+  #post-content h2 { font-size: 1.4rem; }
+  #post-content h3 { font-size: 1.2rem; }
 }
