@@ -1,0 +1,60 @@
+/* the stat row and the image + text rows are wider than a phone screen,
+   so let them wrap; the text beside a cover shrinks before it wraps */
+.stats,
+.feature {
+	flex-wrap: wrap;
+}
+
+.stats > * {
+	flex: 1 1 8rem;
+}
+
+.feature img {
+	width: 160px;
+	height: 160px;
+	object-fit: cover;
+	flex-shrink: 0;
+	box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+.feature > div {
+	flex: 1 1 16rem;
+}
+
+.feature small {
+	font-weight: normal;
+}
+
+.history {
+	list-style: none;
+	display: flex;
+	flex-direction: column;
+	gap: 6px;
+}
+
+.history li {
+	display: grid;
+	grid-template-columns: 2.5em 1fr 3.5em;
+	align-items: center;
+	gap: 8px;
+}
+
+.history .bar {
+	display: block;
+	height: 16px;
+	width: 0%;
+	border-radius: 4px;
+	background: #20880c;
+	opacity: 0.5;
+	transition: width 0.5s ease-in-out;
+}
+
+/* the newest month is the one this page is about */
+.history li:last-child .bar {
+	background: linear-gradient(120deg, #20880c 0, #6fcf6f 37.5%, #20880c 100%);
+	opacity: 1;
+}
+
+.history .plays {
+	text-align: right;
+}

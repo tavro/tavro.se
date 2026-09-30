@@ -23,21 +23,27 @@ function constructArchiveList() {
 }
 
 document.addEventListener("DOMContentLoaded", () => {
-	document
-	.getElementById("archive-toggle")
-	.addEventListener("click", function () {
-		const list = document.getElementById("archive-list");
-		const isVisible = list.style.display === "block";
-		list.style.display = isVisible ? "none" : "block";
-        
-		this.textContent = isVisible
-		? "‣ see what i have been up to previously"
-		: "▾ see what i have been up to previously";
-	});
-    
-	constructArchiveList();
-    
+	// archived copies of this page have the archive list and sometimes the
+	// gallery stripped out, so only wire up what is actually there
+	const toggle = document.getElementById("archive-toggle");
+	if (toggle) {
+		toggle.addEventListener("click", function () {
+			const list = document.getElementById("archive-list");
+			const isVisible = list.style.display === "block";
+			list.style.display = isVisible ? "none" : "block";
+
+			this.textContent = isVisible
+			? "‣ see what i have been up to previously"
+			: "▾ see what i have been up to previously";
+		});
+
+		constructArchiveList();
+	}
+
 	const slides = document.querySelectorAll(".gallery-slide");
+	if (slides.length === 0) {
+		return;
+	}
 	let index = 0;
     
 	function showSlide(i) {
