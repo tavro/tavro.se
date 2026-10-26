@@ -4,6 +4,7 @@ inspired by a blog post on salary transparency by an old [friend](https://vladde
 
 the salaries are presented in swedish kronor (SEK). to approximate the value in american dollars (USD), a simple rule of thumb is to divide by 10.
 
+- **Developer 2026**: 278 SEK/h
 - **Developer 2025**: 254 SEK/h
 - **Developer Intern 2024**: 165 SEK/h
 - **Developer Intern 2023**: 156.5 SEK/h
